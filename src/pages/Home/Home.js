@@ -47,7 +47,7 @@ class Home extends Component{
                     <div className="center">
                     <button className="ui button teal create_btn big" type="button" id="test" style={{marginBottom: '1em'}}>Look at Resume</button>
                     <br />
-                    <button className="ui button teal big" type="button" id="docs">View on Google Docs</button>
+                    <button className="ui button teal big" type="button" id="docs">Resume via Google Docs</button>
                           <div className="ui modal test">
                       <i className="close icon"></i>
                       <div className="header">
