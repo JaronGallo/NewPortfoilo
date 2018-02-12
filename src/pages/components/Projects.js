@@ -30,7 +30,7 @@ export default class Projects extends Component{
                         <div className="content">
                             <a className="header">Octothorpe</a>
                             <div className="meta">
-                                <span className="date">Educational Coding Videos</span>
+                                <span className="date">Coding Video Player</span>
                             </div>
                         </div>
                     </div>
@@ -158,7 +158,7 @@ export default class Projects extends Component{
                         <div className="content">
                             <a className="header">LIRI Bot</a>
                             <div className="meta">
-                                <span className="date">Kinda like Siri but for Node.js</span>
+                                <span className="date">Siri but for Node.js</span>
                             </div>
                         </div>
                     </div>
