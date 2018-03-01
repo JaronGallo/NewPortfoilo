@@ -102,7 +102,7 @@ p.active, p.side{
 #footer{
   /*background-image: url(./background.png);*/
   background-color: #141516;
-   border-bottom:solid .5em #1AA99E;
+   border-bottom:solid .5em #9CD6CD;
    margin: 5em 0 0 0;
   height: 10em;
 
@@ -245,6 +245,9 @@ img#githubBtn, img#resume {
   border-radius: 0;
   margin-top: 0;
 }
+.plz{
+  display: inline-block !important;
+}
 h2 {
   font-size: 2.5em;
 
@@ -253,10 +256,17 @@ h3 {
   font-size: 1.5em;
 }
 p {
-  font-size: 1.5em;
+  font-size: 1.2em;
+}
+.ui.card>.content>.header:not(.ui), .ui.cards>.card>.content>.header:not(.ui){
+  font-size: 1em;
+}
+.ui.card .meta, .ui.cards>.card .meta{
+  font-size: 1em;
+
 }
 .ui.special.cards {
-  margin-bottom: 2em;
+  margin-bottom: .5em;
 }
 
 #test {
@@ -266,6 +276,16 @@ p {
 }
 #footer {
   margin-top: 0;
+
+}
+img.logosGit, img.logosLink {
+
+  width: auto;
+ height: 4em;
+ margin: 2.5em 1em 2em 1em;
+
+ 
+
 }
 }
 

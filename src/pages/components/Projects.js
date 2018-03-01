@@ -11,7 +11,7 @@ export default class Projects extends Component{
                         <hr />
                         <br />
 
-                        <div className="col s12 m4">
+                        <div className="col s4 m4">
                             <div className="ui special cards center">
                                 <div className="ui raised link centered card">
                                     <div className="blurring dimmable image">
@@ -29,14 +29,14 @@ export default class Projects extends Component{
                                     <div className="content">
                                         <a className="header">Octothorpe</a>
                                         <div className="meta">
-                                            <span className="date">Coding Video Player</span>
+                                            <span className="date">Video Player</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="col s12 m4">
+                        <div className="col s4 m4">
                             <div className="ui special cards center">
                                 <div className="ui raised link centered card">
                                     <div className="blurring dimmable image">
@@ -61,7 +61,7 @@ export default class Projects extends Component{
                             </div>
                         </div>
 
-                        <div className="col s12 m4">
+                        <div className="col s4 m4">
                             <div className="ui special cards center">
 
                                 <div className=" ui raised link centered card">
@@ -80,7 +80,7 @@ export default class Projects extends Component{
                                     <div className="content">
                                         <a className="header">Matching Game</a>
                                         <div className="meta">
-                                            <span className="date">Built in React.js</span>
+                                            <span className="date">React.js</span>
                                         </div>
                                     </div>
                                 </div>
@@ -88,11 +88,11 @@ export default class Projects extends Component{
                         </div>
                     </div>
 
-                    <hr className="hrTag"/>
+                    
                     <div className="row">
-                        <br className="hrTag" />
+                        
 
-                        <div className="col s12 m4">
+                        <div className="col s4 m4">
                             <div className="ui special cards center">
                                 <div className="ui raised link centered card">
                                     <div className="blurring dimmable image">
@@ -117,7 +117,7 @@ export default class Projects extends Component{
                             </div>
                         </div>
 
-                        <div className="col s12 m4">
+                        <div className="col s4 m4">
                             <div className="ui special cards center">
                                 <div className=" ui raised link centered card">
                                     <div className="blurring dimmable image">
@@ -134,14 +134,14 @@ export default class Projects extends Component{
                                     <div className="content">
                                         <a className="header">LIRI Bot</a>
                                         <div className="meta">
-                                            <span className="date">Siri but for Node.js</span>
+                                            <span className="date">Siri for Node.js</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="col s12 m4">
+                        <div className="col s4 m4">
                             <div className="ui special cards center">
 
                                 <div className="ui raised link centered card">
