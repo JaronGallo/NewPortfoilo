@@ -12,11 +12,6 @@ class Home extends Component{
 		return (
             <div className="container-fluid">
                 <NamePlate />
-                <Education />
-
-                <div class="ui divider"></div>
-
-                <Goals />
                 <Skills />
 
                 <br />

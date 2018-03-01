@@ -12,4 +12,5 @@ export default class Goals extends Component{
                     </div>
                 </div>
             );
-	}}
+	   }
+}

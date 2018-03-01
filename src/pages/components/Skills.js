@@ -49,7 +49,7 @@ export default class Skills extends Component{
                     <div className="row">
                         <div className="col s6">
                             <p>React.js</p>
-                            <div className="ui green inverted progress" data-percent="80" id="reactBar">
+                            <div className="ui green inverted progress" data-percent="88" id="reactBar">
                                 <div className="bar">
                                     <div className="progress" style={{color: 'black',fontSize: "1.3em"}}></div>
                                 </div>

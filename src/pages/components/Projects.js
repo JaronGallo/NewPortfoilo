@@ -88,9 +88,9 @@ export default class Projects extends Component{
                         </div>
                     </div>
 
-                    <hr />
+                    <hr className="hrTag"/>
                     <div className="row">
-                        <br />
+                        <br className="hrTag" />
 
                         <div className="col s12 m4">
                             <div className="ui special cards center">
@@ -164,4 +164,5 @@ export default class Projects extends Component{
                     </div>
                 </div>
             );
-	    }}
+	    }
+    }

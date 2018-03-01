@@ -1,21 +1,75 @@
 body, html {
   width: 100%;
 }
+img#githubBtn, img#resume {
+  /*max-width:400px;
+  display: inline-block;
+    margin-left: auto;
+    margin-right: auto*/;
+
+
+}
+.hvr-float-shadow {
+
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  cursor: pointer;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+
 .row #exp {
   margin-top: 50px;
   margin-bottom: 50px;
   
 }
 h1 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 10em;
+font-family: 'Roboto', sans-serif;
+  font-size: 8em;
   text-align: center;
-  color: #1AA99E;
-  text-shadow: 2px 2px #000000;
+  color: #666666;
+  
+ /* text-shadow: 2px 2px #000000;*/
 }
 .ui.segment{
   border-radius: 0;
-  margin-top: 100px;
+  
 }
 h2 {
   font-size: 5em;
@@ -29,15 +83,20 @@ p {
 p.active, p.side{
   color: white;
 }
+.tag{
+ margin-top: -1em;
+ font-size: 2em;
+}
 .progress{
   height: auto;
   background-color:inherit;
 }
 #namePlate{
   /*background-image: url(./background.png);*/
-  background-color: #141516;
-   border-bottom:solid .5em #1AA99E;
-  height: 35em;
+ /* background-color: #141516;
+   border-bottom:solid .5em #1AA99E;*/
+
+  width: 60%;
 
 }
 #footer{
@@ -49,7 +108,7 @@ p.active, p.side{
 
 }
 .name{
-  padding-top: .8em;
+  padding-top: .4em;
 }
 body {
   font-family: 'Quicksand', sans-serif;
@@ -73,19 +132,26 @@ img.logosGit, img.logosLink {
 .model{
   height: 900px;
 }
+.hold{
+  margin:0 20% 0 20%;
+  text-align:center;
+}
 
 
 
 @media (max-width: 992px){
   #namePlate{
   
-  height: 25em;
+  height: 20em;
 
 }
 
  .name{
   padding-top: .8em;
   font-size: 7em;
+}
+.hold{
+  margin:0 10% 0 10%;
 }
 }
 
@@ -94,11 +160,56 @@ img.logosGit, img.logosLink {
   
   
 }
+@media (max-width: 900px){
+    
+  .name{
+  padding-top: .8em;
+  font-size: 5em;
+}
+h2 {
+  font-size: 3.5em;
+}
+#namePlate{
+  
+  height: 13em;
+
+}
+
+
+}
+
+@media (max-width: 800px){
+img#githubBtn, img#resume {
+  margin-bottom: 0 !important;
+
+}
+.ui.segment{
+  border-radius: 0;
+  margin-top: 0;
+}
+}
+
   @media (max-width: 747px){
     
   .name{
   padding-top: .8em;
-  font-size: 7em;
+  font-size: 5em;
+}
+#namePlate{
+  
+  height: 13em;
+
+}
+.hold{
+margin:0;
+}
+.ui.segment{
+  border-radius: 0;
+  margin-top: 0;
+}
+img#githubBtn, img#resume {
+  margin-bottom: 0 !important;
+
 }
 }
  
@@ -108,11 +219,21 @@ img.logosGit, img.logosLink {
     
   .name{
   padding-top: .7em;
-  font-size: 4em;
+  font-size: 3em;
 }
 #namePlate{
 
-  height: 13em;
+  height: 8em;
+
+}
+.hrTag{
+  display: none;
+}
+.tag{
+  font-size: 1.5em;
+}
+img#githubBtn, img#resume {
+  margin-bottom: 0 !important;
 
 }
 .row #exp {
@@ -122,10 +243,10 @@ img.logosGit, img.logosLink {
 }
 .ui.segment{
   border-radius: 0;
-  margin-top: 50px;
+  margin-top: 0;
 }
 h2 {
-  font-size: 3em;
+  font-size: 2.5em;
 
 }
 h3 {
