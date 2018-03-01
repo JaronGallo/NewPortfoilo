@@ -142,12 +142,12 @@ img.logosGit, img.logosLink {
 @media (max-width: 992px){
   #namePlate{
   
-  height: 20em;
+  height: 15em;
 
 }
 
  .name{
-  padding-top: .8em;
+  padding-top: .5em;
   font-size: 7em;
 }
 .hold{
