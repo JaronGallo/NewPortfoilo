@@ -9,7 +9,7 @@ export default class NamePlate extends Component{
         function handleResume(e) {
         e.preventDefault();
                     
-        window.open('https://docs.google.com/document/d/1XBL9l8g2DTuD3Vn8sN6lPP3iOAITH3NI2KrJiv-6t0o/edit?usp=sharing');
+        window.open('assets/img/Resume.pdf');
         }     
 
         function handleGit(e) {
