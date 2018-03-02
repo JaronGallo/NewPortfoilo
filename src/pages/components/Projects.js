@@ -2,6 +2,42 @@ import React, { Component } from "react";
 
 export default class Projects extends Component{
 	render() {
+
+        function handleOcto(e) {
+       
+                    
+        window.open('https://github.com/JaronGallo/Octothorpe_v2');
+        }
+
+        function handleTrain(e) {
+        
+                    
+        window.open('https://github.com/SummitMedia1/trainstationguide');
+
+        }
+
+        function handleReact(e) {
+        
+                    
+    window.open('https://github.com/JaronGallo/react-game');
+        }
+
+        function handleGif(e) {
+        
+                    
+        window.open('https://github.com/JaronGallo/GiphyApi');
+        }
+
+        function handleLiri(e) {
+        
+                    
+window.open('https://github.com/JaronGallo/LIRI_Bot');        }
+
+        
+
+
+
+
 		return (
 
             <div className="container">
@@ -12,7 +48,7 @@ export default class Projects extends Component{
                         <br />
 
                         <div className="col s4 m4">
-                            <div className="ui special cards center">
+                            <div className="ui special cards center hvr-float-shadow" onClick={handleOcto}>
                                 <div className="ui raised link centered card">
                                     <div className="blurring dimmable image">
                                         <div className="ui dimmer">
@@ -29,7 +65,7 @@ export default class Projects extends Component{
                                     <div className="content">
                                         <a className="header">Octothorpe</a>
                                         <div className="meta">
-                                            <span className="date">Video Player</span>
+                                            <span className="date">Group Project</span>
                                         </div>
                                     </div>
                                 </div>
@@ -37,7 +73,7 @@ export default class Projects extends Component{
                         </div>
 
                         <div className="col s4 m4">
-                            <div className="ui special cards center">
+                            <div className="ui special cards center hvr-float-shadow" onClick={handleTrain}>
                                 <div className="ui raised link centered card">
                                     <div className="blurring dimmable image">
                                         <div className="ui dimmer">
@@ -54,7 +90,7 @@ export default class Projects extends Component{
                                     <div className="content">
                                         <a className="header">Train Guide</a>
                                         <div className="meta">
-                                            <span className="date">Train Group Project</span>
+                                            <span className="date">Group Project</span>
                                         </div>
                                     </div>
                                 </div>
@@ -62,7 +98,7 @@ export default class Projects extends Component{
                         </div>
 
                         <div className="col s4 m4">
-                            <div className="ui special cards center">
+                            <div className="ui special cards center hvr-float-shadow" onClick={handleReact}>
 
                                 <div className=" ui raised link centered card">
                                     <div className="blurring dimmable image">
@@ -93,7 +129,7 @@ export default class Projects extends Component{
                         
 
                         <div className="col s4 m4">
-                            <div className="ui special cards center">
+                            <div className="ui special cards center hvr-float-shadow" onClick={handleGif}>
                                 <div className="ui raised link centered card">
                                     <div className="blurring dimmable image">
                                         <div className="ui dimmer">
@@ -118,7 +154,7 @@ export default class Projects extends Component{
                         </div>
 
                         <div className="col s4 m4">
-                            <div className="ui special cards center">
+                            <div className="ui special cards center hvr-float-shadow" onClick={handleLiri}>
                                 <div className=" ui raised link centered card">
                                     <div className="blurring dimmable image">
                                         <div className="ui dimmer">
@@ -134,7 +170,7 @@ export default class Projects extends Component{
                                     <div className="content">
                                         <a className="header">LIRI Bot</a>
                                         <div className="meta">
-                                            <span className="date">Siri for Node.js</span>
+                                            <span className="date ">Siri for Node.js</span>
                                         </div>
                                     </div>
                                 </div>
@@ -142,7 +178,7 @@ export default class Projects extends Component{
                         </div>
 
                         <div className="col s4 m4">
-                            <div className="ui special cards center">
+                            <div className="ui special cards center hvr-float-shadow">
 
                                 <div className="ui raised link centered card">
                                     <div className="blurring dimmable image">
