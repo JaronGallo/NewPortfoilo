@@ -25,11 +25,11 @@ window.onload = function() {
 
   // React Matching Game
   $('#btn2').click(function(){
-    window.open('https://github.com/JaronGallo/react-game');
+    window.open('https://github.com/JaronGallo/formsWithMongo');
   });
 
-  $('#btn2Github').click(function(){
-    window.open('https://jarongallo.github.io/react-game/');
+  $('#btn2Heroku').click(function(){
+    window.open('https://desolate-sea-56537.herokuapp.com/');
   });
 
   // LIRI

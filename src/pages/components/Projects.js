@@ -3,41 +3,26 @@ import React, { Component } from "react";
 export default class Projects extends Component{
 	render() {
 
-        function handleOcto(e) {
-       
-                    
+        function handleOcto(e) {      
         window.open('https://github.com/JaronGallo/Octothorpe_v2');
         }
 
-        function handleTrain(e) {
-        
-                    
+        function handleTrain(e) {  
         window.open('https://github.com/SummitMedia1/trainstationguide');
 
         }
 
-        function handleReact(e) {
-        
-                    
-    window.open('https://github.com/JaronGallo/react-game');
+        function handleForms(e) {        
+        window.open('https://desolate-sea-56537.herokuapp.com/');
         }
 
         function handleGif(e) {
-        
-                    
         window.open('https://github.com/JaronGallo/GiphyApi');
         }
 
-        function handleLiri(e) {
-        
-                    
-window.open('https://github.com/JaronGallo/LIRI_Bot');        }
-
-        
-
-
-
-
+        function handleLiri(e) {   
+        window.open('https://github.com/JaronGallo/LIRI_Bot');
+        }
 		return (
 
             <div className="container">
@@ -48,8 +33,8 @@ window.open('https://github.com/JaronGallo/LIRI_Bot');        }
                         <br />
 
                         <div className="col s4 m4">
-                            <div className="ui special cards center hvr-float-shadow" onClick={handleOcto}>
-                                <div className="ui raised link centered card">
+                            <div className="ui special cards center " onClick={handleOcto}>
+                                <div className="ui raised link centered card hvr-float-shadow">
                                     <div className="blurring dimmable image">
                                         <div className="ui dimmer">
                                             <div className="content">
@@ -73,8 +58,8 @@ window.open('https://github.com/JaronGallo/LIRI_Bot');        }
                         </div>
 
                         <div className="col s4 m4">
-                            <div className="ui special cards center hvr-float-shadow" onClick={handleTrain}>
-                                <div className="ui raised link centered card">
+                            <div className="ui special cards center" onClick={handleTrain}>
+                                <div className="ui raised link centered card hvr-float-shadow">
                                     <div className="blurring dimmable image">
                                         <div className="ui dimmer">
                                             <div className="content">
@@ -98,39 +83,38 @@ window.open('https://github.com/JaronGallo/LIRI_Bot');        }
                         </div>
 
                         <div className="col s4 m4">
-                            <div className="ui special cards center hvr-float-shadow" onClick={handleReact}>
+                            <div className="ui special cards center" onClick={handleForms}>
 
-                                <div className=" ui raised link centered card">
+                                <div className=" ui raised link centered card hvr-float-shadow">
                                     <div className="blurring dimmable image">
                                         <div className="ui dimmer">
                                             <div className="content">
                                                 <div className="center">
                                                     <div className="ui inverted button" id="btn2">View Code</div>
                                                     <br /> <br />
-                                                    <div className="ui inverted button" id="btn2Github">View on Github</div>
+                                                    <div className="ui inverted button" id="btn2Heroku">View on Heroku</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="assets/img/matching.jpg" />
+                                        <img src="assets/img/database.jpg" />
                                     </div>
                                     <div className="content">
-                                        <a className="header">Matching Game</a>
+                                        <a className="header">MongoDb</a>
                                         <div className="meta">
-                                            <span className="date">React.js</span>
+                                            <span className="date">Form</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <br className="dontShow"/>
                     
                     <div className="row">
                         
-
                         <div className="col s4 m4">
-                            <div className="ui special cards center hvr-float-shadow" onClick={handleGif}>
-                                <div className="ui raised link centered card">
+                            <div className="ui special cards center" onClick={handleGif}>
+                                <div className="ui raised link centered card hvr-float-shadow">
                                     <div className="blurring dimmable image">
                                         <div className="ui dimmer">
                                             <div className="content">
@@ -154,8 +138,8 @@ window.open('https://github.com/JaronGallo/LIRI_Bot');        }
                         </div>
 
                         <div className="col s4 m4">
-                            <div className="ui special cards center hvr-float-shadow" onClick={handleLiri}>
-                                <div className=" ui raised link centered card">
+                            <div className="ui special cards center" onClick={handleLiri}>
+                                <div className=" ui raised link centered card hvr-float-shadow">
                                     <div className="blurring dimmable image">
                                         <div className="ui dimmer">
                                             <div className="content">
@@ -178,9 +162,9 @@ window.open('https://github.com/JaronGallo/LIRI_Bot');        }
                         </div>
 
                         <div className="col s4 m4">
-                            <div className="ui special cards center hvr-float-shadow">
+                            <div className="ui special cards center">
 
-                                <div className="ui raised link centered card">
+                                <div className="ui raised link centered card hvr-float-shadow">
                                     <div className="blurring dimmable image">
                                         <div className="ui dimmer">
                                             <div className="content">
