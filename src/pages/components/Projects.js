@@ -101,7 +101,7 @@ export default class Projects extends Component{
                                     <div className="content">
                                         <a className="header">MongoDb</a>
                                         <div className="meta">
-                                            <span className="date">Using API</span>
+                                            <span className="date">Using APIs</span>
                                         </div>
                                     </div>
                                 </div>
