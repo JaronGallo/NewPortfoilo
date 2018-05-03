@@ -4,7 +4,7 @@ export default class Projects extends Component{
 	render() {
 
         function handleOcto(e) {      
-        window.open('https://github.com/JaronGallo/Octothorpe_v2');
+            window.location.replace("/project3");
         }
 
         function handleTrain(e) {  
@@ -23,166 +23,81 @@ export default class Projects extends Component{
         function handleLiri(e) {   
         window.open('https://github.com/JaronGallo/LIRI_Bot');
         }
+
+        function handleMongoInfo (e) {
+            e.preventDefault();
+            window.location.replace("/project");
+            }
+
+            function handleRail (e) {
+                e.preventDefault();
+                window.location.replace("/project2");
+                }
 		return (
 
             <div className="container">
 
-                    <div className="row">
-                        <h2 style={{textAlign: 'center'}}>Projects</h2>
-                        <hr />
-                        <br />
+                <div className="row">
+                    <div className="col s12"  >
+                        <div className="col s12" style={{ backgroundColor: 'white' }}>
+                            <img className="projectImg" src="assets/img/database.jpg" style={{ width: '50%',objectFit: 'cover', height: '377px', padding: "1em" }} />
 
-                        <div className="col s4 m4">
-                            <div className="ui special cards center " onClick={handleOcto}>
-                                <div className="ui raised link centered card hvr-float-shadow">
-                                    <div className="blurring dimmable image">
-                                        <div className="ui dimmer">
-                                            <div className="content">
-                                                <div className="center">
-                                                    <div className="ui inverted button" id="btn1">View Code</div>
-                                                    <br /><br />
-                                                    <div className="ui inverted button" id="btn1Heroku">View on Heroku</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <img src="assets/img/octo.gif" />
-                                    </div>
-                                    <div className="content">
-                                        <a className="header">Octothorpe</a>
-                                        <div className="meta">
-                                            <span className="date">Group Project</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col s4 m4">
-                            <div className="ui special cards center" onClick={handleTrain}>
-                                <div className="ui raised link centered card hvr-float-shadow">
-                                    <div className="blurring dimmable image">
-                                        <div className="ui dimmer">
-                                            <div className="content">
-                                                <div className="center">
-                                                   <div className="ui inverted button" id="btn4">View Code</div>
-                                                    <br /><br />
-                                                    <div className="ui inverted button" id="btn4Github">View on Github</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <img src="assets/img/train.jpg" />
-                                    </div>
-                                    <div className="content">
-                                        <a className="header">Train Guide</a>
-                                        <div className="meta">
-                                            <span className="date">Group Project</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col s4 m4">
-                            <div className="ui special cards center" onClick={handleForms}>
-
-                                <div className=" ui raised link centered card hvr-float-shadow">
-                                    <div className="blurring dimmable image">
-                                        <div className="ui dimmer">
-                                            <div className="content">
-                                                <div className="center">
-                                                    <div className="ui inverted button" id="btn2">View Code</div>
-                                                    <br /> <br />
-                                                    <div className="ui inverted button" id="btn2Heroku">View on Heroku</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <img src="assets/img/database.jpg" />
-                                    </div>
-                                    <div className="content">
-                                        <a className="header">MongoDb</a>
-                                        <div className="meta">
-                                            <span className="date">Form with API</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br className="dontShow"/>
-                    
-                    <div className="row">
-                        
-                        <div className="col s4 m4">
-                            <div className="ui special cards center" onClick={handleGif}>
-                                <div className="ui raised link centered card hvr-float-shadow">
-                                    <div className="blurring dimmable image">
-                                        <div className="ui dimmer">
-                                            <div className="content">
-                                                <div className="center">
-                                                    <div className="ui inverted button" id="btn5">View Code</div>
-                                                    <br /> <br />
-                                                    <div className="ui inverted button" id="btn5Github">View on Github</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <img src="assets/img/gif.gif" />
-                                    </div>
-                                    <div className="content">
-                                        <a className="header">GiphyAPI</a>
-                                        <div className="meta">
-                                            <span className="date">Using API calls</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col s4 m4">
-                            <div className="ui special cards center" onClick={handleLiri}>
-                                <div className=" ui raised link centered card hvr-float-shadow">
-                                    <div className="blurring dimmable image">
-                                        <div className="ui dimmer">
-                                            <div className="content">
-                                                <div className="center">
-                                                     <div className="ui inverted button" id="btn3">View Code</div>
-                                                   <br /> <br />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <img src="assets/img/ai.jpg" />
-                                    </div>
-                                    <div className="content">
-                                        <a className="header">LIRI Bot</a>
-                                        <div className="meta">
-                                            <span className="date ">Siri for Node.js</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col s4 m4">
-                            <div className="ui special cards center">
-
-                                <div className="ui raised link centered card hvr-float-shadow">
-                                    <div className="blurring dimmable image">
-                                        <div className="ui dimmer">
-                                            <div className="content">
-                                            </div>
-                                        </div>
-                                        <img src="assets/img/soon.jpg" />
-                                    </div>
-                                    <div className="content">
-                                        <a className="header">In Progress</a>
-                                        <div className="meta">
-                                            <span className="date">Coming soon...</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div className='projectText' style={{ width: '50%', padding: "1em", float: 'right' }}>
+                                <br className='dontShow' />
+                                <br className='dontShow' />
+                                <br className='dontShow' />
+                                <h2>Forms with MongoDb</h2>
+                                <p >Created a basic form that saves data to a Mongo Database and also has a clean UI.</p>
+                                <p className="tag">MongoDb | UI</p>
+                                <br />
+                                <h3 className='projectBtn' onClick={handleMongoInfo} style={{color: 'red', border: "2px solid red", marginLeft: '0'}}>View Project</h3>
                             </div>
                         </div>
                     </div>
                 </div>
+<br/>
+
+                <div className="row">
+                    <div className="col s12"  >
+                        <div className="col s12" style={{ backgroundColor: 'white' }}>
+                        <img className="projectImg dontShowyet" src="assets/img/michal-parzuchowski-262751-unsplash.jpg" style={{objectFit: 'cover', width: '50%', height: '377px', padding: "1em" }} />
+                        <div className='projectText' style={{ width: '50%', padding: "1em", float: 'left' }}>
+                                <br className='dontShow' />
+                                <br className='dontShow' />
+                                <br className='dontShow' />
+                                <h2>Denver Train Guide</h2>
+                                <p >Developed a interactive train app for Denver with times, weather updates, news, and directions.</p>
+                                <p className="tag">APIs | Firebase</p>
+                                <br />
+                                <h3 className='projectBtn' onClick={handleRail} style={{color: 'red', border: "2px solid red", marginLeft: '0'}}>View Project</h3>
+                            </div>
+                            <img className="dontShow" src="assets/img/michal-parzuchowski-262751-unsplash.jpg" style={{objectFit: 'cover', width: '50%', height: '377px', padding: "1em" }} />
+
+                        </div>
+                    </div>
+                </div>
+                <br/>
+
+
+                <div className="row">
+                    <div className="col s12"  >
+                        <div className="col s12" style={{ backgroundColor: 'white' }}>
+                            <img className="projectImg" src="assets/img/parker-byrd-139348-unsplash.jpg" style={{objectFit: 'cover', width: '50%', height: '377px', padding: "1em" }} />
+
+                            <div className='projectText' style={{ width: '50%', padding: "1em", float: 'right' }}>
+                            <br className='dontShow' />
+                                <br className='dontShow' />
+                                <br className='dontShow' />
+                                <h2>Octothorpe (Education Tool)</h2>
+                                <p >React app that takes all of the videos from my Web Development program and cuts out silence and irrelevant infomation. </p>
+                                <p className="tag">User Auth | React.js</p>
+                                <br />
+                                <h3 className='projectBtn' onClick={handleOcto} style={{color: 'red', border: "2px solid red", marginLeft: '0'}}>View Project</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             );
 	    }
     }

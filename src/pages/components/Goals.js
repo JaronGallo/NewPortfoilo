@@ -3,13 +3,21 @@ import React, { Component } from "react";
 export default class Goals extends Component{
 	render() {
 		return (
+            <div className="container">
+            
             <div className="row">
-                    <div className="container">
-                        <h2 style={{textAlign: 'center'}}>Goals</h2>
-                        <h3>1) To be part of a team that innovates and sets high but realistic expections.</h3>
-                        <h3>2) Expand my knowledge and skills by learning new programming languages.</h3>
-                        <h3>3) Be known as a leader.</h3>
+                    <div className="col s12 noTop" style={{marginTop: '5em'}}>
+                        <div className="col l6 m6 s12 title" style={{fontWeight:"300", paddingLeft: "0"}}>
+                            <h1 style={{marginBottom:"0"}}>Web Developer.</h1>
+                            <h1  style={{margin:"0 0 .5em 0"}} >Marketing.</h1>
+                        </div>
+
+                        <div className="col l6 m6 s12"> 
+                        <p className="titleText">With my Marketing degree and my knowledge on Web Development, I know how to best reach customers through a great user experience!</p>
+                            
+                        </div>
                     </div>
+                </div>
                 </div>
             );
 	   }

@@ -3,107 +3,58 @@ import React, { Component } from "react";
 export default class Skills extends Component{
 	render() {
 		return (
-            <div className="container-fluid ui inverted segment" style={{textAlign: 'center'}}>
+            <div className="container-fluid"style={{backgroundColor: 'white', width: '100%'}}>
 
-                    <h2 style={{textAlign: 'center'}}>Skills</h2>
-                    <div class="ui divider"></div>
-
-                    <div className="row">
-                        <div className="col s6">
-                            <p>HTML</p>
-                            <div className="ui red  progress" data-percent="99" id="htmlBar">
-                                <div className="bar">
-                                    <div className="progress" style={{color: 'black',fontSize: "1.3em"}}></div>
-                                </div>
-                            </div>
+            <div className="row container" >
+                    <div className="col s12" style={{ padding: '0',height:'10px' }}>
+                        <div className="col l8 m6 s12" style={{ margin: '2em 0 2em 0', padding: '0 8em 0 0', float: 'left' }} >
+                        <p className="aboutHeading">ABOUT ME</p>
                         </div>
-                        <div className="col s6">
-                            <p>CSS</p>
-                            <div className="ui orange  progress" data-percent="95" id="cssBar">
-                                <div className="bar">
-                                    <div className="progress" style={{color: 'black',fontSize: "1.3em"}}></div>
-                                </div>
-                            </div>
+                        <div className="col l2 m6 s12 dontShow2" style={{ margin: '2em 0 2em 0', padding: '0 5em 0 0', float: 'left' }} >
+                            <p className="aboutHeading">SKILLS</p>
+                                
                         </div>
                     </div>
+            </div>
 
-                    <div className="row">
-                        <div className="col s6">
-                            <p>JavaScript</p>
-                            <div className="ui yellow  progress" data-percent="85" id="jsBar">
-                                <div className="bar">
-                                    <div className="progress" style={{color: 'black',fontSize: "1.3em"}}></div>
-                                </div>
-                            </div>
+                <div className="row container" >
+                    <div className="col s12" style={{ padding: '0' }}>
+                        <div className="col l8 m6 s12 aboutRow" style={{ margin: '2em 0 3em 0', padding: '1em 10em 0 0', float: 'left' }} >
+                            
+                            <p className='aboutText'>Web Development doesn't seem like work to me. I truely enjoy every second of coding a website that looks great and gives the user a unqiue experience. I finished my degree in marketing at Metropolitan State University of Denver. A year later I got a Web Development certificate at University of Denver.</p>
+                            <br />
+                            <p className='aboutText'>Today I am currently looking for a position at a company where I can showcase my skills in both front-end and back-end development.</p>
                         </div>
-                        <div className="col s6">
-                            <p>jQuery</p>
-                            <div className="ui blue progress" data-percent="90" id="jqueryBar">
-                                <div className="bar">
-                                    <div className="progress" style={{color: 'black',fontSize: "1.3em"}}></div>
+                        <div className="col l2 m6 s12 dontShowyet2" style={{ margin: '2em 0 2em 0', padding: '0 5em 0 0', float: 'left' }} >
+                            <p className="aboutHeading">SKILLS</p>
+                                
+                        </div>
+                        <div className="col l2 m3 s6 noMargin" style={{ margin: '2em 0 2em 0', padding: '1em 5em 0 0', float: 'left' }} >
+                            <div className="skills">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>JavaScript</p>
+                                <p>jQuery</p>
+                                <p>React.js</p>
                                 </div>
-                            </div>
+                        </div>
+                        <div className="col l2 m3 s6 noMargin" style={{ margin: '2em 0 2em 0', padding: '1em 2em 0 0', float: 'left' }} >
+                        <div className="skills">
+                                <p>MySql</p>
+                                <p>MongoDB</p>
+                                <p>Express</p>
+                                <p>User Auth</p>
+                                <p>Testing</p>
+                                </div>
                         </div>
                     </div>
-
-                    <div className="row">
-                        <div className="col s6">
-                            <p>React.js</p>
-                            <div className="ui green inverted progress" data-percent="88" id="reactBar">
-                                <div className="bar">
-                                    <div className="progress" style={{color: 'black',fontSize: "1.3em"}}></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col s6">
-                            <p>MySql</p>
-                            <div className="ui teal progress" data-percent="70" id="myBar">
-                                <div className="bar">
-                                    <div className="progress" style={{color: 'black',fontSize: "1.3em"}}></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="row">
-                        <div className="col s6">
-                            <p>MongoDB</p>
-                            <div className="ui blue inverted progress" data-percent="85" id="mongoBar">
-                                <div className="bar">
-                                    <div className="progress" style={{color: 'black',fontSize: "1.3em"}}></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col s6">
-                            <p>Express</p>
-                            <div className="ui red progress" data-percent="90" id="expressBar">
-                                <div className="bar">
-                                    <div className="progress" style={{color: 'black',fontSize: "1.3em"}}></div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div className="row">
-                        <div className="col s6">
-                            <p>User Auth</p>
-                            <div className="ui purple inverted progress" data-percent="80" id="authBar">
-                                <div className="bar">
-                                    <div className="progress" style={{color: 'black',fontSize: "1.3em"}}></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col s6">
-                            <p>Testing</p>
-                            <div className="ui pink inverted progress" data-percent="75" id="testingBar">
-                                <div className="bar">
-                                    <div className="progress" style={{color: 'black',fontSize: "1.3em"}}></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
+
+
+
+         <div className="push"></div>
+        </div>
 
             );
 	    }

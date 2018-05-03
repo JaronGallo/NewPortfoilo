@@ -7,16 +7,16 @@ import NamePlate from '../components/NamePlate.js';
 import Projects from '../components/Projects.js';
 import Skills from '../components/Skills.js';
 
-class Home extends Component{
+class About extends Component{
 	render() {
 		return (
             <div className="container-fluid">
                 <NamePlate />
 				<Goals />
-                <Projects />
+                <Skills />
 				<Footer />
             </div>
 		);
 	}
 }
-export default Home;
+export default About;

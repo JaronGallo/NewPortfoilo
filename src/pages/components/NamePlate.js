@@ -1,10 +1,24 @@
 import React, { Component } from "react";
 
 export default class NamePlate extends Component{
+
+    
 	render() {
 
-        
-        
+        function handleAbout (e) {
+            e.preventDefault();
+            window.location.replace('/about');
+        }
+        function handleWork (e) {
+            e.preventDefault();
+            window.location.replace("/");
+            }
+            
+        function handleGit(e) {
+        e.preventDefault();
+                    
+        window.open('https://github.com/JaronGallo');
+        }    
 
         function handleResume(e) {
         e.preventDefault();
@@ -12,26 +26,37 @@ export default class NamePlate extends Component{
         window.open('assets/img/Resume.pdf');
         }     
 
-        function handleGit(e) {
-        e.preventDefault();
-                    
-        window.open('https://github.com/JaronGallo');
-        }     
+
+        function handleContact (e) {
+            e.preventDefault();
+            window.location.replace('/contact');
+            }
+         
 
 
 
 		return (
-            <div className="container-fluid ">
-            <div className="row " id="namePlate" style={{textAlign: 'center'}}>
-                <h1 className="name ">Jaron Gallo</h1>
-                <p className="tag " style={{textAlign: 'center'}}>Web Developer</p>
+            <div className="container">
+                <div className="row">
+                <div className="col s12">
+                    <div className="col s12" style={{marginTop: '3em',padding: '0'}}>
+                        <div className="col l4 m4 s12" style={{padding: "0"}}>
+                            <img className="nameLogo" onClick={handleWork} style={{paddingLeft: "0", width: "174px"}} src="assets/img/Logo.svg" />
+                        </div>
+
+                        <div className="col l8 m8 s12 nav" style={{padding: '0',textAlign: 'right'}}>
+                            <h3 className="noPad" onClick={handleWork}>Work</h3>
+                            <h3 onClick={handleAbout} >About</h3>
+                            <h3 onClick={handleGit}>Github</h3>
+                            <h3 onClick={handleResume}>Résumé</h3>
+                            <h3 onClick={handleContact} style={{color: 'red', border: "2px solid red"}}>Contact</h3>
+                        </div>
+                    </div>
                 </div>
-                <div className="hold container-fuild row center-align" style={{maxWidth:'800px', margin:'auto'}}> 
-                 <img id="resume" className="col s6 m6 hvr-float-shadow" onClick={handleResume} src="assets/img/btns/btn1.png" style={{maxHeight:'450px',maxWidth:'400px', padding:'0', marginBottom: '2.5em'}}/>
-                  <img id="githubBtn" className="col s6 m6 hvr-float-shadow " onClick={handleGit} src="assets/img/btns/btn2.png" style={{maxHeight:'450px',maxWidth:'400px', padding:'0', marginBottom: '2.5em'}}/>
-                 {/*<button className="ui button big center" type="button" id="docs" style={{zIndex:'3', position: 'absolute', margin:'11.2em 20em 20em 20em'}}>Resume via Google Docs</button>*/}
                 </div>
-           
+
+            
+             
             </div>
         );
 	}}
