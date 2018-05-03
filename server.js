@@ -60,6 +60,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
           })
         })
         // Dont forget to change back to 80
-app.listen(process.env.PORT || 3001);
+app.listen(process.env.PORT || 80);
 
 console.log("works");
