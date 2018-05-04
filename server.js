@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'NewPortfoilio/build')));
 app.post('/api/form', (req,res) => {
   nodemailer.createTestAccount((err, account) => {
     const htmlEmail = `
@@ -57,7 +57,8 @@ app.post('/api/form', (req,res) => {
 
         
 app.get('*', function (req, res) {
-  res.sendFile('index.html');
+  const index = path.join(__dirname, 'build', 'index.html');
+  res.sendFile(index);
 });
        
         // Dont forget to change back to 80
