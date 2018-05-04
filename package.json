@@ -1,6 +1,7 @@
 {
   "name": "my_home",
   "version": "0.1.0",
+  "homepage" : "http://jarongallo.com",
   "private": true,
   "dependencies": {
     "asyncawait": "^1.0.6",
@@ -22,7 +23,7 @@
   },
   "main": "index.js",
   "license": "MIT",
-  "proxy": "http://jarongallo:3001",
+  "proxy": "http://localhost:80",
   "devDependencies": {
     "babel-plugin-transform-async-to-generator": "^6.24.1"
   }
