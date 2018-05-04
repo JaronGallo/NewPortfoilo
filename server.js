@@ -5,11 +5,12 @@ const path = require('path');
 const app = express();
 
 
-app.use(express.static(path.join(__dirname, 'build')));
+
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
+app.use(express.static(path.join(__dirname, 'build')));
 app.post('/api/form', (req,res) => {
   nodemailer.createTestAccount((err, account) => {
     const htmlEmail = `
@@ -56,7 +57,7 @@ app.post('/api/form', (req,res) => {
 
         
         app.get('*', function (request, response){
-          response.sendFile(path.resolve(__dirname, 'build', 'index.html'))
+          response.sendFile(path.resolve(__dirname, '../build', 'index.html'))
       })
        
         // Dont forget to change back to 80
