@@ -55,11 +55,11 @@ app.post('/api/form', (req,res) => {
   })
 })
 
-     app.get('*', function (req, res) {
+   
       app.get('*', (req, res)=>{
         res.sendFile(path.join(__dirname, '../build/index.html'));
       })
-});   
+
 
        
         // Dont forget to change back to 80
