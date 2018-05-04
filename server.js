@@ -54,10 +54,10 @@ app.post('/api/form', (req,res) => {
   })
 })
 
-        app.get('*', (req, res)=>{
-          res.sendFile(path.join(__dirname, '../build/index.html'));
-        });
-
+        
+        app.get('*', function (request, response){
+          response.sendFile(path.resolve(__dirname, 'build', 'index.html'))
+      })
        
         // Dont forget to change back to 80
 app.listen(process.env.PORT || 80);
