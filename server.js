@@ -57,7 +57,7 @@ app.post('/api/form', (req,res) => {
 
         
         app.get('*', function (request, response){
-          response.sendFile(path.resolve(__dirname, '../build', 'index.html'))
+          response.sendFile(path.resolve(__dirname, '../NewPortfoilio/build', 'index.html'))
       })
        
         // Dont forget to change back to 80
