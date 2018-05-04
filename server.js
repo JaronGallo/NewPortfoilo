@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use("/",function(req,res){
-    res.sendfile(path.join(__dirname, '../public', 'index.html'));
+    res.sendfile(path.join(__dirname, '../build/public', 'index.html'));
   //res.send("test");
 });
         
