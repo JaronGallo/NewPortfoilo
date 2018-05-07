@@ -60,18 +60,18 @@ export default class Projects extends Component{
                 <div className="row">
                     <div className="col s12"  >
                         <div className="col s12" style={{ backgroundColor: 'white' }}>
-                        <img className="projectImg dontShowyet" src="assets/img/michal-parzuchowski-262751-unsplash.jpg" style={{ width: '50%', height: '377px', padding: "1em" }} />
+                        <img className="projectImg dontShowyet" src="assets/img/michal-parzuchowski-262751-unsplash.jpg" style={{objectFit: 'cover', width: '50%', height: '377px', padding: "1em" }} />
                         <div className='projectText' style={{ width: '50%', padding: "1em", float: 'left' }}>
                                 <br className='dontShow' />
                                 <br className='dontShow' />
-                                <br className='dontShow'  />
+                                <br className='dontShow' />
                                 <h2>Denver Train Guide</h2>
                                 <p >Developed a interactive train app for Denver with times, weather updates, news, and directions.</p>
                                 <p className="tag">APIs | Firebase</p>
                                 <br />
                                 <h3 className='projectBtn' onClick={handleRail} style={{color: 'red', border: "2px solid red", marginLeft: '0'}}>View Project</h3>
                             </div>
-                            <img className="dontShow" src="assets/img/michal-parzuchowski-262751-unsplash.jpg" style={{ width: '50%', height: '377px', padding: "1em" }} />
+                            <img className="dontShow" src="assets/img/michal-parzuchowski-262751-unsplash.jpg" style={{objectFit: 'cover', width: '50%', height: '377px', padding: "1em" }} />
 
                         </div>
                     </div>
@@ -82,7 +82,7 @@ export default class Projects extends Component{
                 <div className="row">
                     <div className="col s12"  >
                         <div className="col s12" style={{ backgroundColor: 'white' }}>
-                            <img className="projectImg" src="assets/img/parker-byrd-139348-unsplash.jpg" style={{width: '50%', height: '377px', padding: "1em" }} />
+                            <img className="projectImg" src="assets/img/parker-byrd-139348-unsplash.jpg" style={{objectFit: 'cover', width: '50%', height: '377px', padding: "1em" }} />
 
                             <div className='projectText' style={{ width: '50%', padding: "1em", float: 'right' }}>
                             <br className='dontShow' />
