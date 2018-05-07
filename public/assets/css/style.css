@@ -6,10 +6,12 @@ body, html {
     overflow-x: hidden; 
   background-color: #F2F1F1;
   color: #333333;
-  -webkit-overflow-scrolling: touch;
-  overflow-y: scroll;
+ 
 }
-
+#root{
+   overflow-y: "auto";
+    -webkit-overflow-scrolling: "touch";
+}
 h3{
  display:inline;
  padding: .2em .6em .2em .6em;
