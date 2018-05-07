@@ -39,7 +39,7 @@ export default class Projects extends Component{
 
                 <div className="row">
                     <div className="col s12"  >
-                        <div className="col s12" style={{ backgroundColor: 'white' }}>
+                        <div className="col s12" id='greenSock2' style={{ backgroundColor: 'white' }}>
                             <img className="projectImg" src="assets/img/database.jpg" style={{ width: '50%',objectFit: 'cover', height: '377px', padding: "1em" }} />
 
                             <div className='projectText' style={{ width: '50%', padding: "1em", float: 'right' }}>
@@ -59,7 +59,7 @@ export default class Projects extends Component{
 
                 <div className="row">
                     <div className="col s12"  >
-                        <div className="col s12" style={{ backgroundColor: 'white' }}>
+                        <div className="col s12" id='greenSock3' style={{ backgroundColor: 'white' }}>
                         <img className="projectImg dontShowyet" src="assets/img/michal-parzuchowski-262751-unsplash.jpg" style={{objectFit: 'cover', width: '50%', height: '377px', padding: "1em" }} />
                         <div className='projectText' style={{ width: '50%', padding: "1em", float: 'left' }}>
                                 <br className='dontShow' />
@@ -81,7 +81,7 @@ export default class Projects extends Component{
 
                 <div className="row">
                     <div className="col s12"  >
-                        <div className="col s12" style={{ backgroundColor: 'white' }}>
+                        <div className="col s12" id='greenSock4' style={{ backgroundColor: 'white' }}>
                             <img className="projectImg" src="assets/img/parker-byrd-139348-unsplash.jpg" style={{objectFit: 'cover', width: '50%', height: '377px', padding: "1em" }} />
 
                             <div className='projectText' style={{ width: '50%', padding: "1em", float: 'right' }}>

@@ -41,7 +41,7 @@ export default class NamePlate extends Component{
                 <div className="col s12">
                     <div className="col s12" style={{marginTop: '3em',padding: '0'}}>
                         <div className="col l4 m4 s12" style={{padding: "0"}}>
-                            <img className="nameLogo" onClick={handleWork} style={{paddingLeft: "0", width: "174px"}} src="assets/img/Logo.svg" />
+                            <img className="nameLogo" id="greenSock" onClick={handleWork} style={{paddingLeft: "0", width: "174px"}} src="assets/img/Logo.svg" />
                         </div>
 
                         <div className="col l8 m8 s12 nav" style={{padding: '0',textAlign: 'right'}}>

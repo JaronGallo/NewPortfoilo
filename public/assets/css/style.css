@@ -25,7 +25,23 @@ h3{
 }
 .nameLogo{
   cursor: pointer;
+  position: relative;
+  visibility: hidden;
 }
+#greenSock2{
+  position: relative;
+  visibility: hidden;
+}
+#greenSock3{
+  position: relative;
+  visibility: hidden;
+}
+
+#greenSock4{
+  position: relative;
+  visibility: hidden;
+}
+
 h1{
   font-family: 'Merriweather', sans-serif;
   font-style: italic;
