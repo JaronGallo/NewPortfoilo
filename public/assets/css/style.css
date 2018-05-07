@@ -8,9 +8,8 @@ body, html {
   color: #333333;
  
 }
-#root{
-   overflow-y: "auto";
-    -webkit-overflow-scrolling: "touch";
+* {
+  -webkit-overflow-scrolling: touch;
 }
 h3{
  display:inline;
