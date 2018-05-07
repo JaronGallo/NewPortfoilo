@@ -64,7 +64,7 @@ export default class Projects extends Component{
                         <div className='projectText' style={{ width: '50%', padding: "1em", float: 'left' }}>
                                 <br className='dontShow' />
                                 <br className='dontShow' />
-                                <br className='dontShow' />
+                                <br className='dontShow'  />
                                 <h2>Denver Train Guide</h2>
                                 <p >Developed a interactive train app for Denver with times, weather updates, news, and directions.</p>
                                 <p className="tag">APIs | Firebase</p>
