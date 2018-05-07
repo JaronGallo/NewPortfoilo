@@ -6,6 +6,7 @@ body, html {
     overflow-x: hidden; 
   background-color: #F2F1F1;
   color: #333333;
+  -webkit-overflow-scrolling: touch;
 }
 
 h3{
