@@ -7,17 +7,17 @@ export default class Skills extends Component{
 
             <div className="row container" >
                     <div className="col s12" style={{ padding: '0',height:'10px' }}>
-                        <div className="col l8 m6 s12" style={{ margin: '2em 0 2em 0', padding: '0 8em 0 0', float: 'left' }} >
-                        <p className="aboutHeading">ABOUT ME</p>
+                        <div  className="col l8 m6 s12" style={{ margin: '2em 0 2em 0', padding: '0 8em 0 0', float: 'left' }} >
+                        <p  className="aboutHeading">ABOUT ME</p>
                         </div>
                         <div className="col l2 m6 s12 dontShow2" style={{ margin: '2em 0 2em 0', padding: '0 5em 0 0', float: 'left' }} >
-                            <p className="aboutHeading">SKILLS</p>
+                            <p  className="aboutHeading">SKILLS</p>
                                 
                         </div>
                     </div>
             </div>
 
-                <div className="row container" >
+                <div className="row container" id='greenSock2' >
                     <div className="col s12" style={{ padding: '0' }}>
                         <div className="col l8 m6 s12 aboutRow" style={{ margin: '2em 0 3em 0', padding: '1em 10em 0 0', float: 'left' }} >
                             

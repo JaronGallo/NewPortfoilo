@@ -4,7 +4,7 @@ export default class Projects extends Component{
 	render() {
 
         function handleOcto(e) {      
-            window.location.replace("/project3");
+            window.location.assign("/project3");
         }
 
         function handleTrain(e) {  
@@ -26,18 +26,19 @@ export default class Projects extends Component{
 
         function handleMongoInfo (e) {
             e.preventDefault();
-            window.location.replace("/project");
+            window.location.assign("/project");
             }
 
             function handleRail (e) {
                 e.preventDefault();
-                window.location.replace("/project2");
+                window.location.assign("/project2");
                 }
 		return (
 
             <div className="container">
-
+                 
                 <div className="row">
+                
                     <div className="col s12"  >
                         <div className="col s12" id='greenSock2' style={{ backgroundColor: 'white' }}>
                             <img className="projectImg" src="assets/img/database.jpg" style={{ width: '50%',objectFit: 'cover', height: '377px', padding: "1em" }} />

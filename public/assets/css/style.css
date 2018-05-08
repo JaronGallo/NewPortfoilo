@@ -11,6 +11,12 @@ body, html {
 * {
   -webkit-overflow-scrolling: touch;
 }
+
+
+.navH3{
+  z-index: 3;
+  position: relative;
+}
 h3{
  display:inline;
  padding: .2em .6em .2em .6em;
@@ -20,13 +26,16 @@ h3{
  color: #333333;
  font-weight: 300;
  cursor: pointer;
+ z-index: 3;
 
 
 }
 .nameLogo{
+  
   cursor: pointer;
   position: relative;
-  visibility: hidden;
+  
+  z-index: 3;
 }
 #greenSock2{
   position: relative;
@@ -40,6 +49,12 @@ h3{
 #greenSock4{
   position: relative;
   visibility: hidden;
+}
+
+#greenSock5{
+  position: relative;
+  visibility: hidden;
+  
 }
 
 h1{
@@ -132,7 +147,7 @@ p{
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
  h1{
-        color: red;
+        /* color: red; */
       }
       .nameLogo{
         /* width: 100% !important; */
@@ -160,7 +175,7 @@ p{
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
       h1{
-        color: blue;
+        /* color: blue; */
         font-size: 2em !important;
       }
       .noTop{
@@ -219,7 +234,7 @@ p{
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 600px) {
       h1{
-        color: green;
+        /* color: green; */
         text-align: center !important;
        
         margin: 0 !important;
@@ -304,7 +319,7 @@ p{
     /* Custom, iPhone Retina */ 
     @media only screen and (max-width : 460px) {
       h1{
-        color: orange;
+        /* color: orange; */
       }
       .line{
         
@@ -327,7 +342,7 @@ p{
 
     @media only screen and (max-width : 320px) {
       h1{
-        color: purple;
+        /* color: purple; */
       }
      
       .nav h3{
