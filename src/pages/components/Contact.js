@@ -22,7 +22,8 @@ export default class ContactMe extends Component{
     }
 
     async handleSubmit(e) {
-        e.preventDefault()
+        e.preventDefault();
+        e.target.reset();
         const  { name, email, message } = this.state;
 
         const form = await axios.post('/api/form', {
@@ -30,6 +31,8 @@ export default class ContactMe extends Component{
             email,
             message
         })
+        
+       
     }
 
 
@@ -48,7 +51,7 @@ export default class ContactMe extends Component{
                 <div className="row">
                     <div className="col s12 noTop" style={{ marginTop: '5em' }}>
                         <div className="col l8 s12" style={{ fontWeight: "300", paddingLeft: "0" }}>
-                            <form onSubmit={this.handleSubmit} className="ui form">
+                            <form onSubmit={this.handleSubmit.bind(this)} className="ui form" >
            
                                 <div className="fields" id='greenSock2'>
                                     <div className="field" style={{width:"47%", marginRight:'3%'}}>
@@ -57,7 +60,8 @@ export default class ContactMe extends Component{
                                         name="name" 
                                         required placeholder="Your Name" 
                                         onChange={this.handleChange}
-                                        style={{fontSize:'18px', fontFamily: 'Montserrat sans-serif' }} />
+                                        style={{fontSize:'18px', fontFamily: 'Montserrat sans-serif' }}
+                                        />
                                     </div>
                                     <div className="field" style={{width:"47%", marginLeft:'3%'}} >
                                         <input 
