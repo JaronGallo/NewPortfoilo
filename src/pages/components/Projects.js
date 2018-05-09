@@ -40,7 +40,7 @@ export default class Projects extends Component{
                 <div className="row">
                 
                     <div className="col s12"  >
-                        <div className="col s12" id='greenSock2' style={{ backgroundColor: 'white' }}>
+                        <div className="col s12 zoom" id='greenSock2' style={{ backgroundColor: 'white' }}>
                             <img className="projectImg" src="assets/img/database.jpg" style={{ width: '50%',objectFit: 'cover', height: '377px', padding: "1em" }} />
 
                             <div className='projectText' style={{ width: '50%', padding: "1em", float: 'right' }}>
@@ -51,7 +51,7 @@ export default class Projects extends Component{
                                 <p >Created a basic form that saves data to a Mongo Database and also has a clean UI.</p>
                                 <p className="tag">MongoDb | UI</p>
                                 <br />
-                                <h3 className='projectBtn' onClick={handleMongoInfo} style={{color: 'red', border: "2px solid red", marginLeft: '0'}}>View Project</h3>
+                                <h3 className='projectBtn ' onClick={handleMongoInfo} style={{color: 'red', border: "2px solid red", marginLeft: '0'}}>View Project</h3>
                             </div>
                         </div>
                     </div>

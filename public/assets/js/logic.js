@@ -16,6 +16,39 @@ window.onload = function () {
 
 
 
+    TweenMax.set(".zoom", {
+        transformOrigin: "50% 50%"
+      });
+    
+      // loop through each element
+      $(".zoom").each(function(i, el) {
+    
+        // create a timeline for this element in paused state
+        var tl = new TimelineMax({
+          paused: true
+        });
+    
+        // create your tween of the timeline in a variable
+        tl.to(el, 0.2, {
+          scale: 1.05
+        });
+    
+        // store the tween timeline in the javascript DOM node
+        el.animation = tl;
+    
+        //create the event handler
+        $(el).on("mouseenter", function() {
+          //this.style.willChange = 'transform';
+          this.animation.play();
+          el.parentNode.appendChild(el);
+        }).on("mouseleave", function() {
+          //this.style.willChange = 'auto';
+          el.parentNode.insertBefore(el, el.parentNode.firstChild);
+          this.animation.reverse();
+         
+        });
+      });
+
 
     // var $circle = $(".circle");
 
