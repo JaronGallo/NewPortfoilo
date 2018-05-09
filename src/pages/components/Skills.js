@@ -17,7 +17,7 @@ export default class Skills extends Component{
                     </div>
             </div>
 
-                <div className="row container" id='greenSock2' >
+                <div className="row container" id='greenSock4' >
                     <div className="col s12" style={{ padding: '0' }}>
                         <div className="col l8 m6 s12 aboutRow" style={{ margin: '2em 0 3em 0', padding: '1em 10em 0 0', float: 'left' }} >
                             
@@ -30,7 +30,7 @@ export default class Skills extends Component{
                                 
                         </div>
                         <div className="col l2 m3 s6 noMargin" style={{ margin: '2em 0 2em 0', padding: '1em 5em 0 0', float: 'left' }} >
-                            <div className="skills">
+                            <div className="skills "id='greenSock3'>
                                 <p>HTML</p>
                                 <p>CSS</p>
                                 <p>JavaScript</p>
@@ -39,7 +39,7 @@ export default class Skills extends Component{
                                 </div>
                         </div>
                         <div className="col l2 m3 s6 noMargin" style={{ margin: '2em 0 2em 0', padding: '1em 2em 0 0', float: 'left' }} >
-                        <div className="skills">
+                        <div className="skills" id='greenSock2'>
                                 <p>MySql</p>
                                 <p>MongoDB</p>
                                 <p>Express</p>

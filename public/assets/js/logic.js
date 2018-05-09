@@ -16,10 +16,7 @@ window.onload = function () {
 
 
 
-    TweenMax.set(".zoom", {
-        transformOrigin: "50% 50%"
-      });
-    
+
       // loop through each element
       $(".zoom").each(function(i, el) {
     
@@ -30,7 +27,7 @@ window.onload = function () {
     
         // create your tween of the timeline in a variable
         tl.to(el, 0.2, {
-          scale: 1.05
+          scale: 1.02
         });
     
         // store the tween timeline in the javascript DOM node
