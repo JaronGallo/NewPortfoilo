@@ -12,7 +12,14 @@ body, html {
   -webkit-overflow-scrolling: touch;
 }
 
-
+h3:hover { 
+ color: #4A90E2 !important;
+ border-color: black !important;
+}
+.zoom:hover {
+  -webkit-box-shadow: 5px 5px 58px 0px rgba(0,0,0,0.14); 
+  box-shadow: 5px 5px 58px 0px rgba(0,0,0,0.14);
+}
 .navH3{
   z-index: 3;
   position: relative;

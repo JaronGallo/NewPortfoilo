@@ -26,7 +26,7 @@ window.onload = function () {
         });
     
         // create your tween of the timeline in a variable
-        tl.to(el, 0.2, {
+        tl.to(el, 0.1, {
           scale: 1.02
         });
     
