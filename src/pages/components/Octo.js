@@ -16,7 +16,7 @@ export default class Octo extends Component{
                 <div style={{ backgroundColor: 'white' }}>
                     <div className="row container" >
                         <div className="col s12" style={{ marginTop: '3em',paddingLeft: '0'  }}>
-                            <div className="col l6 m12 s12"id="greenSock4" style={{ paddingLeft: "0" }}>
+                            <div className="col l6 m12 s12"id="greenSock4" style={{ padding: "0 40px 0 0" }}>
                             <p className="aboutHeading">OBJECTIVE</p>
                             <p>Implement user authentication using Google and Facebook into our final group project. After being authenticated, routing the user to our page with the videos</p>
                                 <br/>
@@ -28,7 +28,7 @@ export default class Octo extends Component{
                             
                             </div>
 
-                            <div id="greenSock3"className="col l6 m12 s12" style={{ float: "right", padding: "0" }}>
+                            <div id="greenSock3"className="col l6 m12 s12" style={{ float: "right", padding: "0 40px 0 0"  }}>
                                 <p className="aboutHeading">SOLUTION</p>
                                     <p>A simple landing page which asks the user to sign in using either Facebook or Google. Once they sign in, they are sent to a page with a list of videos that were hand edited to get rid of unimportant info.</p>
                              <p>With good communication and team work we were able to put all of our parts together fairly easy but video list not complete.</p>
@@ -49,18 +49,7 @@ export default class Octo extends Component{
                     
                     
                 </div>
-                <div className="row container" >
-                    <div className="col s12" style={{ padding:'0' }}>
-                    <img className="detailImg" src="assets/img/business-cellphone-codes-92904.jpg" style={{ width: '50%',  objectFit: 'cover',height:'350px',padding:'0 1em 0  0'}} />
-                    <img className="detailImg" src="assets/img/codes-coding-computer-247791.jpg" style={{ width: '50%', objectFit: 'cover',height:'350px',padding:'0 0 0 1em', float: 'right'}} />
-                    <br/>
-                    <div />
-                        
-                    </div>
-
-                    
-                    
-                </div>
+               
                 </div>
             );
 	   }

@@ -11,7 +11,11 @@ body, html {
 * {
   -webkit-overflow-scrolling: touch;
 }
-
+h3.borderBtn:hover { 
+  color: white !important;
+  background-color: #B52637 !important;
+  border-color:#B52637 !important;
+ }
 h3:hover { 
  color: #4A90E2 !important;
  border-color: black !important;

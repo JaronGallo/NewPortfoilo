@@ -1,25 +1,79 @@
 
 window.onload = function () {
-    var test = document.getElementById("greenSock");
+var test = document.getElementById("greenSock");
     var test2 = document.getElementById("greenSock2");
     var test3 = document.getElementById("greenSock3");
     var test4 = document.getElementById("greenSock4");
 
-    var skills = document.getElementById("greenSock5");
+    
 
+
+  if (window.location.pathname == '/') {   
+    document.getElementById("work").style.color = "#4A90E2";
 
     TweenLite.from(test, 1, { x: -1000, autoAlpha: 0 });
     TweenLite.from(test2, 1, { x: -1000, delay: .5, autoAlpha: 0 });
     TweenLite.from(test3, 1.1, { x: -1000, delay: .75, autoAlpha: 0 });
     TweenLite.from(test4, 1.2, { x: -1000, delay: 1, autoAlpha: 0 });
+   
+}else if(window.location.pathname == '/about'){
+  document.getElementById("about").style.color = "#4A90E2";
+
+  var test = document.getElementById("greenSock");
+  TweenLite.from(test, 1, { autoAlpha: 0 });
+  TweenLite.from(test2, 0, {autoAlpha: 0 });
+    TweenLite.from(test3, 0, {autoAlpha: 0 });
+    TweenLite.from(test4, 0, {autoAlpha: 0 });
+   
+     }
+     else if(window.location.pathname == '/contact'){
+
+      document.getElementById("contact").style.color = "white";
+      document.getElementById("contact").style.backgroundColor = "#B52637";
+      document.getElementById("contact").style.borderColor = "#B52637";
+
+      document.getElementById("contact2").style.color = "white";
+      document.getElementById("contact2").style.backgroundColor = "#B52637";
+      document.getElementById("contact2").style.borderColor = "#B52637";
+      var test = document.getElementById("greenSock");
+      TweenLite.from(test, 1, { autoAlpha: 0 });
+      TweenLite.from(test2, 0, {autoAlpha: 0 });
+        TweenLite.from(test3, 0, {autoAlpha: 0 });
+        TweenLite.from(test4, 0, {autoAlpha: 0 });
+       
+         }
+         else if(window.location.pathname == '/project'){
+          var test = document.getElementById("greenSock");
+          TweenLite.from(test, 1, { autoAlpha: 0 });
+          TweenLite.from(test2, 0, {autoAlpha: 0 });
+            TweenLite.from(test3, 0, {autoAlpha: 0 });
+            TweenLite.from(test4, 0, {autoAlpha: 0 });
+           
+             }
+             else if(window.location.pathname == '/project2'){
+              var test = document.getElementById("greenSock");
+              TweenLite.from(test, 1, { autoAlpha: 0 });
+              TweenLite.from(test2, 0, {autoAlpha: 0 });
+                TweenLite.from(test3, 0, {autoAlpha: 0 });
+                TweenLite.from(test4, 0, {autoAlpha: 0 });
+               
+                 }
+                 else if(window.location.pathname == '/project3'){
+                  var test = document.getElementById("greenSock");
+                  TweenLite.from(test, 1, { autoAlpha: 0 });
+                  TweenLite.from(test2, 0, {autoAlpha: 0 });
+                    TweenLite.from(test3, 0, {autoAlpha: 0 });
+                    TweenLite.from(test4, 0, {autoAlpha: 0 });
+                   
+                     }
+
+
+
  
 
     if($(window).width() >= 1024){
        $(".zoom").each(function(i, el) {
 
-
-        
-    
         // create a timeline for this element in paused state
         var tl = new TimelineMax({
           paused: true
@@ -27,7 +81,7 @@ window.onload = function () {
     
         // create your tween of the timeline in a variable
         tl.to(el, 0.1, {
-          scale: 1.02
+          scale: 1.005
         });
     
         // store the tween timeline in the javascript DOM node

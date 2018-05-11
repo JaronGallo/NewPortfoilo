@@ -46,11 +46,11 @@ export default class NamePlate extends Component{
 
                         <div className="col l8 m8 s12 nav" style={{padding: '0',textAlign: 'right'}}>
                           
-                                 <h3 className="noPad navH3" onClick={handleWork}>Work</h3>
-                            <h3 className="navH3" onClick={handleAbout} >About</h3>
+                                 <h3 id='work'  className="noPad navH3" onClick={handleWork}>Work</h3>
+                            <h3 id='about' className="navH3" onClick={handleAbout} >About</h3>
                             <h3 className="navH3" onClick={handleGit}>Github</h3>
                             <h3 className="navH3" onClick={handleResume}>Résumé</h3>
-                            <h3 className="navH3" onClick={handleContact} style={{color: '#B52637', border: "2px solid #B52637"}}>Contact</h3>
+                            <h3 id='contact' className="borderBtn" onClick={handleContact} style={{color: '#B52637', border: "2px solid #B52637"}}>Contact</h3>
                             
                            
                         </div>
