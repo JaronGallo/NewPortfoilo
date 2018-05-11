@@ -14,8 +14,7 @@ window.onload = function () {
     TweenLite.from(test4, 1.2, { x: -1000, delay: 1, autoAlpha: 0 });
  
 
-    if ( $(window).width() > 739) {     
-      //Add your code for large screen   
+    if($(window).width() >= 1024){
        $(".zoom").each(function(i, el) {
 
 
@@ -46,11 +45,13 @@ window.onload = function () {
          
         });
       });
-    }
-    else {
-      //Add code for small screen
-    }
+          } else {
+             console.log('test');
+          }
+      
+    
 
+ 
 
       // loop through each element
   
