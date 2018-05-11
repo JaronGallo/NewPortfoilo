@@ -9,7 +9,7 @@ var test = document.getElementById("greenSock");
 
 
   if (window.location.pathname == '/') {   
-    document.getElementById("work").style.color = "#4A90E2";
+    document.getElementById("work").style.color = "#B52637";
 
     TweenLite.from(test, 1, { x: -1000, autoAlpha: 0 });
     TweenLite.from(test2, 1, { x: -1000, delay: .5, autoAlpha: 0 });
@@ -17,7 +17,7 @@ var test = document.getElementById("greenSock");
     TweenLite.from(test4, 1.2, { x: -1000, delay: 1, autoAlpha: 0 });
    
 }else if(window.location.pathname == '/about'){
-  document.getElementById("about").style.color = "#4A90E2";
+  document.getElementById("about").style.color = "#B52637";
 
   var test = document.getElementById("greenSock");
   TweenLite.from(test, 1, { autoAlpha: 0 });
@@ -30,7 +30,7 @@ var test = document.getElementById("greenSock");
 
       document.getElementById("contact").style.color = "white";
       document.getElementById("contact").style.backgroundColor = "#B52637";
-      document.getElementById("contact").style.borderColor = "#B52637";
+      document.getElementById("contact").style.border = "#B52637";
 
       document.getElementById("contact2").style.color = "white";
       document.getElementById("contact2").style.backgroundColor = "#B52637";

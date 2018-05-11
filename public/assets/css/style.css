@@ -17,8 +17,8 @@ h3.borderBtn:hover {
   border-color:#B52637 !important;
  }
 h3:hover { 
- color: #4A90E2 !important;
- border-color: black !important;
+ color: #B52637 !important;
+ 
 }
 .zoom:hover {
   -webkit-box-shadow: 5px 5px 58px 0px rgba(0,0,0,0.14); 
