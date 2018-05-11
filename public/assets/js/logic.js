@@ -14,11 +14,12 @@ window.onload = function () {
     TweenLite.from(test4, 1.2, { x: -1000, delay: 1, autoAlpha: 0 });
  
 
+    if ( $(window).width() > 739) {     
+      //Add your code for large screen   
+       $(".zoom").each(function(i, el) {
 
 
-
-      // loop through each element
-      $(".zoom").each(function(i, el) {
+        
     
         // create a timeline for this element in paused state
         var tl = new TimelineMax({
@@ -45,6 +46,14 @@ window.onload = function () {
          
         });
       });
+    }
+    else {
+      //Add code for small screen
+    }
+
+
+      // loop through each element
+  
 
 
     // var $circle = $(".circle");
