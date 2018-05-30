@@ -21,7 +21,7 @@ export default class Skills extends Component{
                     <div className="col s12" style={{ padding: '0' }}>
                         <div className="col l8 m6 s12 aboutRow" style={{ margin: '2em 0 3em 0', padding: '1em 10em 0 0', float: 'left' }} >
                             
-                            <p className='aboutText'>Web Development doesn't seem like work to me. I truely enjoy every second of coding a website that looks great and gives the user a unqiue experience. I finished my degree in marketing at Metropolitan State University of Denver. A year later I got a Web Development certificate at University of Denver.</p>
+                            <p className='aboutText'>Web Development doesn't seem like work to me. I truly enjoy every second of coding a website which looks great and gives the user a unqiue experience. I finished my degree in marketing at Metropolitan State University of Denver. A year later I got a Web Development certificate at University of Denver.</p>
                             <br />
                             <p className='aboutText'>Today I am currently looking for a position at a company where I can showcase my skills in both front-end and back-end development.</p>
                         </div>

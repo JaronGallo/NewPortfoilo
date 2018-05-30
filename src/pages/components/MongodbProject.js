@@ -19,7 +19,7 @@ export default class MongodbProject extends Component{
                         <div className="col s12" style={{ marginTop: '3em',paddingLeft: '0'  }}>
                             <div id='greenSock4' className="col l6 m12 s12" style={{ padding: "0 40px 0 0" }}>
                             <p className="aboutHeading">OBJECTIVE</p>
-                                <p >Build an app that saves data that the user enters into the form. Have a user interface that looks fresh and that works on both desktop and mobile devices.</p>
+                                <p >Build an app that saves data the user enters into the form. Have a fresh user interface that works on both desktop and mobile devices.</p>
                                 <br/>
                                 <p className="aboutHeading" style={{marginBottom:'0'}}>CHALLENGE</p>
                                 <p>Lots of challenges were involved in building this project but the largest was to make sure that the database would react with the front-end. The data inputted had to be validated before entered into the database. When the user entered in false data, such as a email address without "@", they will be prompted to enter a valid email.</p>                                
