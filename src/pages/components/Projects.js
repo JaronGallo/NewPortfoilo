@@ -11,6 +11,10 @@ export default class Projects extends Component{
         window.open('https://github.com/SummitMedia1/trainstationguide');
 
         }
+        function handleNatours(e) {  
+            window.open('https://natours-jarongallo.herokuapp.com/');
+    
+            }
 
         function handleForms(e) {        
         window.open('https://desolate-sea-56537.herokuapp.com/');
@@ -36,11 +40,31 @@ export default class Projects extends Component{
 		return (
 
             <div className="container">
-                 
+                  <div className="row">
+                    <div className="col s12"  >
+                        <div className="col s12 zoom" id='' style={{ backgroundColor: 'white' }}>
+                        <img className="projectImg dontShowyet" src="assets/img/hero-small.jpg" style={{objectFit: 'cover', width: '50%', height: '377px', padding: '10.5px 0 7px 0' }} />
+                        <div className='projectText' style={{ width: '50%', padding: "1em", float: 'left' }}>
+                                <br className='dontShow' />
+                                <br className='dontShow' />
+                                <br className='dontShow' />
+                                <h2>Natours</h2>
+                                <p >Learned from course called Advanced CSS and Sass, no Bootstrap, just HTML and CSS!</p>
+                                <p className="tag">CSS | Sass</p>
+                                <br />
+                                <h3 className='projectBtn borderBtn' onClick={handleNatours} style={{color: '#B52637', border: "2px solid #B52637", marginLeft: '0'}}>View Project</h3>
+                            </div>
+                            <img className="dontShow" src="assets/img/hero-small.jpg" style={{objectFit: 'cover', width: '50%', height: '377px', padding: '10.5px 0 7px 0'  }} />
+
+                        </div>
+                    </div>
+                </div>
+
+
                 <div className="row">
                 
                     <div className="col s12"  >
-                        <div className="col s12 zoom" id='greenSock2' style={{ backgroundColor: 'white' }}>
+                        <div className="col s12 zoom" id='' style={{ backgroundColor: 'white' }}>
                             <img className="projectImg" src="assets/img/database.jpg" style={{ width: '50%',objectFit: 'cover', height: '377px', padding: '10.5px 0 7px 0' }} />
 
                             <div className='projectText' style={{ width: '50%', padding: "1em", float: 'right' }}>
@@ -60,7 +84,7 @@ export default class Projects extends Component{
 
                 <div className="row">
                     <div className="col s12"  >
-                        <div className="col s12 zoom" id='greenSock3' style={{ backgroundColor: 'white' }}>
+                        <div className="col s12 zoom" id='' style={{ backgroundColor: 'white' }}>
                         <img className="projectImg dontShowyet" src="assets/img/michal-parzuchowski-262751-unsplash.jpg" style={{objectFit: 'cover', width: '50%', height: '377px', padding: '10.5px 0 7px 0' }} />
                         <div className='projectText' style={{ width: '50%', padding: "1em", float: 'left' }}>
                                 <br className='dontShow' />
@@ -82,7 +106,7 @@ export default class Projects extends Component{
 
                 <div className="row">
                     <div className="col s12"  >
-                        <div className="col s12 zoom" id='greenSock4' style={{ backgroundColor: 'white' }}>
+                        <div className="col s12 zoom" id='' style={{ backgroundColor: 'white' }}>
                             <img className="projectImg" src="assets/img/parker-byrd-139348-unsplash.jpg" style={{objectFit: 'cover', width: '50%', height: '377px', padding: '10.5px 0 7px 0'  }} />
 
                             <div className='projectText' style={{ width: '50%', padding: "1em", float: 'right' }}>
@@ -98,6 +122,8 @@ export default class Projects extends Component{
                         </div>
                     </div>
                 </div>
+                
+                
             </div>
             );
 	    }
