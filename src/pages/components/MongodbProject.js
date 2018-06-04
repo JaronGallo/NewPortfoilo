@@ -7,7 +7,7 @@ export default class MongodbProject extends Component{
             <div className="container-fluid">
 
                 <div className="row container">
-                    <div className="col s12 noTop"id='greenSock2' style={{ marginTop: '5em',paddingLeft: '0' }}>
+                    <div className="col s12 noTop"id='' style={{ marginTop: '5em',paddingLeft: '0' }}>
                         <div className="col m12" style={{ fontWeight: "300", paddingLeft: "0" }}>
                             <h1 >Forms with MongoDb</h1>
                             <p className="tag" style={{ marginBottom: '3em',paddingLeft: '0'  }}>MongoDb | UI</p>
@@ -17,7 +17,7 @@ export default class MongodbProject extends Component{
                 <div style={{ backgroundColor: 'white' }}>
                     <div className="row container" >
                         <div className="col s12" style={{ marginTop: '3em',paddingLeft: '0'  }}>
-                            <div id='greenSock4' className="col l6 m12 s12" style={{ padding: "0 40px 0 0" }}>
+                            <div id='' className="col l6 m12 s12" style={{ padding: "0 40px 0 0" }}>
                             <p className="aboutHeading">OBJECTIVE</p>
                                 <p >Build an app that saves data the user enters into the form. Have a fresh user interface that works on both desktop and mobile devices.</p>
                                 <br/>
@@ -28,7 +28,7 @@ export default class MongodbProject extends Component{
                             <br/>
                             </div>
 
-                            <div id='greenSock3' className="col l6 m12 s12" style={{ float: "right", padding: "0 40px 0 0"  }}>
+                            <div id='' className="col l6 m12 s12" style={{ float: "right", padding: "0 40px 0 0"  }}>
                                 <p className="aboutHeading">SOLUTION</p>
                                 <p>Created a form that requires First Name, Email, Password and Repeat Password. Built and styled the app using Materialize (CSS Framework) and also used media queries (Styling the site based on screen size) to make sure the user interface was clean no matter what size of screen.</p>
                                 <p>Used mongo.js and mongoose.js to link my server to the database and push data if validated by schema and front-end. Made button that links to an API where the user can view or delete the database.</p>

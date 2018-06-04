@@ -21,8 +21,8 @@ h3:hover {
  
 }
 .zoom:hover {
-  -webkit-box-shadow: 5px 5px 58px 0px rgba(0,0,0,0.14); 
-  box-shadow: 5px 5px 58px 0px rgba(0,0,0,0.14);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); ; 
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); ;
 }
 .navH3{
   z-index: 3;
