@@ -1,9 +1,7 @@
 
 window.onload = function () {
 var test = document.getElementById("greenSock");
-    var test2 = document.getElementById("greenSock2");
-    var test3 = document.getElementById("greenSock3");
-    var test4 = document.getElementById("greenSock4");
+   
 
     
 
