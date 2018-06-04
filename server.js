@@ -2,16 +2,19 @@ const express = require('express');
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer')
 const path = require('path');
+require("dotenv").config();
 const app = express();
 
 
 
 app.use(express.static(path.join(__dirname, 'build')));
 app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({
+  extended: false
+}))
 
 
-app.post('/api/form', (req,res) => {
+app.post('/api/form', (req, res) => {
   nodemailer.createTestAccount((err, account) => {
     const htmlEmail = `
     <h3> Contact Detail</h3>
@@ -23,46 +26,50 @@ app.post('/api/form', (req,res) => {
     `;
 
     let transporter = nodemailer.createTransport({
-      host: 'smtp.ethereal.email',
-      port: 587,
+      service: 'gmail',
+      secure: "false",
+      port: 25,
       auth: {
-          user: 'm4vltsn4dlbde6wn@ethereal.email',
-          pass: 'v7n487ysfyTqZuZGY8'
+        user: process.env.USER,
+        pass: process.env.PASS
+      },
+      tls: {
+        rejectUnauthorized: false
       }
-  })
+    });
 
-  let mailOptions = {
-    from:'test@testaccount.com',
-    to: 'm4vltsn4dlbde6wn@ethereal.email',
-    replyTo: 'test@testaccount.com',
-    subject: 'New Message',
-    text: req.body.message,
-    html: htmlEmail
-  }
-
-  transporter.sendMail(mailOptions, (err, info) => {
-    if (err) {
-        return console.log(err);
+    let mailOptions = {
+      from: 'test@testaccount.com',
+      to: 'jarongallo@gmail.com',
+      replyTo: 'test@testaccount.com',
+      subject: 'New Message',
+      text: req.body.message,
+      html: htmlEmail
     }
-    console.log('Message sent: %s', info.message);
-    // Preview only available when sending through an Ethereal account
-    console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
-    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-    // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-})
+    transporter.sendMail(mailOptions, (err, info) => {
+      if (err) {
+        return console.log(err);
+      }
+      console.log('Message sent: %s', info.message);
+      // Preview only available when sending through an Ethereal account
+      console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+
+      // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+      // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+    })
 
   })
 })
 
-   
-      app.get('*', (req, res)=>{
-        res.sendFile(path.join(__dirname, './build/index.html'));
-      })
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, './build/index.html'));
+});
 
 
-       
-        // Dont forget to change back to 80
-app.listen(process.env.PORT || 80);
+
+// Dont forget to change back to 80 also proxy to 80
+app.listen(process.env.PORT || 8080);
 
 console.log("works");
