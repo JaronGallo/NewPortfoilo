@@ -5,7 +5,8 @@ const path = require('path');
 
 const app = express();
 
-require('dotenv').config({ path: path.join(__dirname, '.env') });
+require('dotenv').config({path: __dirname + '/.env'});
+
 
 const USER = process.env.USER;
 const PASS = process.env.PASS;
