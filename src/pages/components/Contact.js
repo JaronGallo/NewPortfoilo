@@ -53,7 +53,7 @@ export default class ContactMe extends Component{
                         <div className="col l8 s12" style={{ fontWeight: "300", paddingLeft: "0" }}>
                             <form onSubmit={this.handleSubmit.bind(this)} className="ui form" >
            
-                                <div className="fields" id='greenSock2'>
+                                <div className="fields" >
                                     <div className="field" style={{width:"47%", marginRight:'3%'}}>
                                         <input 
                                         type="text" 
@@ -74,7 +74,7 @@ export default class ContactMe extends Component{
                                 </div>
                                 
 
-                                <div className="field" id='greenSock3'>
+                                <div className="field">
                                     <textarea
                                     name="message"
                                     maxlength="500"
@@ -84,7 +84,7 @@ export default class ContactMe extends Component{
 
                                 </div>
 
-                                <input type="submit" name='submit' value="Send" id='greenSock4' className="ui button btn" style={{ float: 'right', backgroundColor: '#C1272D', color: '#FFFFFF', borderRadius: '0',width:'164px', marginRight:'-2.15em' }}/>
+                                <input type="submit" name='submit' value="Send"  className="ui button btn" style={{ float: 'right', backgroundColor: '#C1272D', color: '#FFFFFF', borderRadius: '0',width:'164px', marginRight:'-2.15em' }}/>
                             </form>
                         </div>
                         <div className="col s1"></div>
