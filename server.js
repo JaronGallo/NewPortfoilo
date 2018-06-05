@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer')
 const path = require('path');
-require("dotenv").config();
+require('dotenv').config({ path: path.join(__dirname, '.env') });
 const app = express();
 
 
@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({
   extended: false
-}))
+}));
 
 
 app.post('/api/form', (req, res) => {
@@ -57,10 +57,10 @@ app.post('/api/form', (req, res) => {
 
       // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
       // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-    })
+    });
 
-  })
-})
+  });
+});
 
 
 app.get('*', (req, res) => {
