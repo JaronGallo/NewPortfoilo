@@ -2,9 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer')
 const path = require('path');
-require('dotenv').config({ path: path.join(__dirname, '.env') });
+
 const app = express();
 
+require('dotenv').config({ path: path.join(__dirname, '.env') });
 
 
 app.use(express.static(path.join(__dirname, 'build')));
