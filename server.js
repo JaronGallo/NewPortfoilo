@@ -7,6 +7,8 @@ const app = express();
 
 require('dotenv').config({ path: path.join(__dirname, '.env') });
 
+const USER = process.env.USER;
+const PASS = process.env.PASS;
 
 app.use(express.static(path.join(__dirname, 'build')));
 app.use(bodyParser.json())
@@ -31,8 +33,8 @@ app.post('/api/form', (req, res) => {
       secure: "false",
       port: 25,
       auth: {
-        user: process.env.USER,
-        pass: process.env.PASS
+        user: USER,
+        pass: PASS
       },
       tls: {
         rejectUnauthorized: false
