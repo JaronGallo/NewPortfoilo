@@ -5,7 +5,7 @@ const path = require('path');
 
 const app = express();
 
-require('dotenv').config({path: __dirname + '/.env'});
+require('dotenv').config({path:process.env.PWD + '/.env'});
 
 
 const USER = process.env.USER;
