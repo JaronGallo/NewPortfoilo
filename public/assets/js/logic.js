@@ -19,9 +19,7 @@ var test = document.getElementById("greenSock");
 
   var test = document.getElementById("greenSock");
   TweenLite.from(test, 1, { autoAlpha: 0 });
-  TweenLite.from(test2, 0, {autoAlpha: 0 });
-    TweenLite.from(test3, 0, {autoAlpha: 0 });
-    TweenLite.from(test4, 0, {autoAlpha: 0 });
+ 
    
      }
      else if(window.location.pathname == '/contact'){
@@ -35,33 +33,23 @@ var test = document.getElementById("greenSock");
       document.getElementById("contact2").style.borderColor = "#B52637";
       var test = document.getElementById("greenSock");
       TweenLite.from(test, 1, { autoAlpha: 0 });
-      TweenLite.from(test2, 0, {autoAlpha: 0 });
-        TweenLite.from(test3, 0, {autoAlpha: 0 });
-        TweenLite.from(test4, 0, {autoAlpha: 0 });
-       
+   
          }
          else if(window.location.pathname == '/project'){
           var test = document.getElementById("greenSock");
           TweenLite.from(test, 1, { autoAlpha: 0 });
-          TweenLite.from(test2, 0, {autoAlpha: 0 });
-            TweenLite.from(test3, 0, {autoAlpha: 0 });
-            TweenLite.from(test4, 0, {autoAlpha: 0 });
-           
+      
              }
              else if(window.location.pathname == '/project2'){
               var test = document.getElementById("greenSock");
               TweenLite.from(test, 1, { autoAlpha: 0 });
-              TweenLite.from(test2, 0, {autoAlpha: 0 });
-                TweenLite.from(test3, 0, {autoAlpha: 0 });
-                TweenLite.from(test4, 0, {autoAlpha: 0 });
+        
                
                  }
                  else if(window.location.pathname == '/project3'){
                   var test = document.getElementById("greenSock");
                   TweenLite.from(test, 1, { autoAlpha: 0 });
-                  TweenLite.from(test2, 0, {autoAlpha: 0 });
-                    TweenLite.from(test3, 0, {autoAlpha: 0 });
-                    TweenLite.from(test4, 0, {autoAlpha: 0 });
+                
                    
                      }
                      
