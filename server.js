@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({
 
 
 app.post('/api/form', (req, res) => {
-  nodemailer.createTestAccount((err, account) => {
+  
     const htmlEmail = `
     <h3> Contact Detail</h3>
     <ul>
@@ -64,7 +64,7 @@ app.post('/api/form', (req, res) => {
       // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
     });
 
-  });
+
 });
 
 
