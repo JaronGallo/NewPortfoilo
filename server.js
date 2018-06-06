@@ -59,6 +59,8 @@ app.post('/api/form', (req, res) => {
       // Preview only available when sending through an Ethereal account
       console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
+      res.render("contact", {msg:"email sent!"});
+
       // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
       // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
     });
