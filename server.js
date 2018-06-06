@@ -5,11 +5,11 @@ const path = require('path');
 
 const app = express();
 
-require('dotenv').config({path:process.env.PWD + '/.env'});
+require('dotenv').config({});
 
 
-const USER = process.env.USER;
-const PASS = process.env.PASS;
+const USER = process.env.REACT_APP_USER;
+
 
 app.use(express.static(path.join(__dirname, 'build')));
 app.use(bodyParser.json())
@@ -35,7 +35,7 @@ app.post('/api/form', (req, res) => {
       port: 25,
       auth: {
         user: USER,
-        pass: PASS
+        pass: process.env.REACT_APP_PASS
       },
       tls: {
         rejectUnauthorized: false
