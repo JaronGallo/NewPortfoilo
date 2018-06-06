@@ -8,7 +8,7 @@ const app = express();
 require('dotenv').config({});
 
 
-const USER = process.env.REACT_APP_USER;
+
 
 
 app.use(express.static(path.join(__dirname, 'build')));
@@ -34,7 +34,7 @@ app.post('/api/form', (req, res) => {
       secure: "false",
       port: 25,
       auth: {
-        user: USER,
+        user: process.env.REACT_APP_USER,
         pass: process.env.REACT_APP_PASS
       },
       tls: {
@@ -44,7 +44,7 @@ app.post('/api/form', (req, res) => {
 
     let mailOptions = {
       from: 'test@testaccount.com',
-      to: 'jarongallo@gmail.com',
+      to: 'test@gmail.com',
       replyTo: 'test@testaccount.com',
       subject: 'New Message',
       text: req.body.message,
