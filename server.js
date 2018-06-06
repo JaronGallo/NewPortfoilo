@@ -30,17 +30,16 @@ app.post('/api/form', (req, res) => {
     `;
 
     let transporter = nodemailer.createTransport({
-      service: 'smtp.gmail.com',
-      secure: "false",
-      port: 25,
-      auth: {
-        user: process.env.REACT_APP_USER,
-        pass: process.env.REACT_APP_PASS
+        host: 'smtp.ethereal.email',
+        port: 587,
+        secure: false,
+        user: m4vltsn4dlbde6wn@ethereal.email,
+        pass: v7n487ysfyTqZuZGY8
       }
     });
 
     let mailOptions = {
-      from: 'test@testaccount.com',
+      from: 'm4vltsn4dlbde6wn@ethereal.email',
       to: 'jarongallo@gmail.com',
       replyTo: 'test@testaccount.com',
       subject: 'New Message',
