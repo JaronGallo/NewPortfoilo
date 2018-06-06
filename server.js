@@ -30,7 +30,7 @@ app.post('/api/form', (req, res) => {
     `;
 
     let transporter = nodemailer.createTransport({
-      service: 'gmail',
+      service: 'smtp.gmail.com',
       secure: "false",
       port: 25,
       auth: {
@@ -44,7 +44,7 @@ app.post('/api/form', (req, res) => {
 
     let mailOptions = {
       from: 'test@testaccount.com',
-      to: 'test@gmail.com',
+      to: 'jarongallo@gmail.com',
       replyTo: 'test@testaccount.com',
       subject: 'New Message',
       text: req.body.message,
