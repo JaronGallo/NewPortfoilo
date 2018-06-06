@@ -36,9 +36,6 @@ app.post('/api/form', (req, res) => {
       auth: {
         user: process.env.REACT_APP_USER,
         pass: process.env.REACT_APP_PASS
-      },
-      tls: {
-        rejectUnauthorized: false
       }
     });
 
