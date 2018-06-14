@@ -1,86 +1,143 @@
-window.onload = function() {
+
+window.onload = function () {
+var test = document.getElementById("greenSock");
+   
+
+    
+
+
+  if (window.location.pathname == '/') {   
+    document.getElementById("work").style.color = "#B52637";
+
+    TweenLite.from(test, 1, { x: -1000, autoAlpha: 0 });
+    TweenLite.from(test2, 1, { x: -1000, delay: .5, autoAlpha: 0 });
+    TweenLite.from(test3, 1.1, { x: -1000, delay: .75, autoAlpha: 0 });
+    TweenLite.from(test4, 1.2, { x: -1000, delay: 1, autoAlpha: 0 });
+   
+}else if(window.location.pathname == '/about'){
+  document.getElementById("about").style.color = "#B52637";
+
+  var test = document.getElementById("greenSock");
+  TweenLite.from(test, 1, { autoAlpha: 0 });
+ 
+   
+     }
+     else if(window.location.pathname == '/contact'){
+
+      document.getElementById("contact").style.color = "white";
+      document.getElementById("contact").style.backgroundColor = "#B52637";
+      document.getElementById("contact").style.border = "#B52637";
+
+      document.getElementById("contact2").style.color = "white";
+      document.getElementById("contact2").style.backgroundColor = "#B52637";
+      document.getElementById("contact2").style.borderColor = "#B52637";
+      var test = document.getElementById("greenSock");
+      TweenLite.from(test, 1, { autoAlpha: 0 });
+   
+         }
+         else if(window.location.pathname == '/project'){
+          var test = document.getElementById("greenSock");
+          TweenLite.from(test, 1, { autoAlpha: 0 });
       
-  // $(".name").hide();
-  // $('.name').transition('fly down');
-// Skill bars
-  $('#htmlBar').progress();
-  $('#cssBar').progress();
-  $('#jsBar').progress();
-  $('#jqueryBar').progress();
-  $('#reactBar').progress();
-  $('#myBar').progress();
-  $('#mongoBar').progress();
-  $('#expressBar').progress();
-  $('#authBar').progress();
-  $('#testingBar').progress();
+             }
+             else if(window.location.pathname == '/project2'){
+              var test = document.getElementById("greenSock");
+              TweenLite.from(test, 1, { autoAlpha: 0 });
+        
+               
+                 }
+                 else if(window.location.pathname == '/project3'){
+                  var test = document.getElementById("greenSock");
+                  TweenLite.from(test, 1, { autoAlpha: 0 });
+                
+                   
+                     }
+                     
 
-  // Project Octothorpe_v2
-  $('#btn1').click(function(){
-    window.open('https://github.com/JaronGallo/Octothorpe_v2');
-  });
 
-  $('#btn1Heroku').click(function(){
-    window.open('https://afternoon-tor-12706.herokuapp.com/');
-  });
 
-  // React Matching Game
-  $('#btn2').click(function(){
-    window.open('https://github.com/JaronGallo/formsWithMongo');
-  });
+ 
 
-  $('#btn2Heroku').click(function(){
-    window.open('https://desolate-sea-56537.herokuapp.com/');
-  });
+    if($(window).width() >= 1024){
+       $(".zoom").each(function(i, el) {
 
-  // LIRI
-  $('#btn3').click(function(){
-    window.open('https://github.com/JaronGallo/LIRI_Bot');
-  });
+        // create a timeline for this element in paused state
+        var tl = new TimelineMax({
+          paused: true
+        });
+    
+        // create your tween of the timeline in a variable
+        tl.to(el, 0.1, {
+          scale: 1.005
+        });
+    
+        // store the tween timeline in the javascript DOM node
+        el.animation = tl;
+    
+        //create the event handler
+        $(el).on("mouseenter", function() {
+          //this.style.willChange = 'transform';
+          this.animation.play();
+          el.parentNode.appendChild(el);
+        }).on("mouseleave", function() {
+          //this.style.willChange = 'auto';
+          el.parentNode.insertBefore(el, el.parentNode.firstChild);
+          this.animation.reverse();
+         
+        });
+      });
+          } else {
+             console.log('test');
+          }
+      
+    
 
-  // Project RTD
-  $('#btn4').click(function(){
-    window.open('https://github.com/SummitMedia1/trainstationguide');
-  });
+ 
 
-  $('#btn4Github').click(function(){
-    window.open('https://summitmedia1.github.io/trainstationguide/');
-  });
+      // loop through each element
+  
 
-  // Project GiphyApi
-  $('#btn5').click(function(){
-    window.open('https://github.com/JaronGallo/GiphyApi');
-  });
 
-  $('#btn5Github').click(function(){
-    window.open('https://jarongallo.github.io/GiphyApi/');
-  });
+    // var $circle = $(".circle");
 
-  $('.logosGit').click(function(){
-    window.open('https://github.com/JaronGallo');
+    
+    // function moveCircle(e) {
+    //   TweenLite.to($circle, 0.4, {
+    //     css: {
+    //       left: e.pageX,
+    //       top: e.pageY,
+    //       scale:.50,
+    //     }
+    //   });
+    
+    
+    // }
+    
+    // document.addEventListener('mousemove', moveCircle)
+ 
+    // var bt = document.querySelector('img');
 
-  });
-  // Logo animation
-  $('.logosGit').hover(function(){
-    $('.logosGit').transition('tada');
-  });
 
-  $('.logosLink').hover(function(){
-    $('.logosLink').transition('tada');
-  });
+    // bt.addEventListener('mouseover', overButton)
+    // bt.addEventListener('mouseout', outButton)
 
-  $('.logosLink').click(function(){
-    window.open('https://www.linkedin.com/in/jarongallo/');
-  });
-       
-  setTimeout(function(){$('.shape').shape('flip down');}, 3000);
 
-       $('.special.cards .image').dimmer({
-    on: 'hover'
-  });
-  };
 
-  $(function(){
-    $('#docs').click(function(){
-    window.open('https://docs.google.com/document/d/1XBL9l8g2DTuD3Vn8sN6lPP3iOAITH3NI2KrJiv-6t0o/edit?usp=sharing');
-  });
-});
+    
+    // function overButton() {
+    //     TweenLite.to($circle, 0.15, {
+    //         autoAlpha:0,
+    //         ease:Linear.easeNone
+    //     })
+    // }
+    
+    // function outButton() {
+    //     TweenLite.to($circle, 0.15, {
+    //         autoAlpha:1,
+    //         ease:Linear.easeNone
+    //     })
+    // }
+    
+ 
+   
+    };
