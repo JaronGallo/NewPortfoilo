@@ -15,14 +15,17 @@ h3.borderBtn:hover {
   color: white !important;
   background-color: #B52637 !important;
   border-color:#B52637 !important;
+  transition: all .2s !important;
  }
 h3:hover { 
  color: #B52637 !important;
+ transition: all .2s !important;
  
 }
 .zoom:hover {
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); ; 
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); ;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); 
+  transition: all .2s !important;
 }
 .navH3{
   z-index: 3;
