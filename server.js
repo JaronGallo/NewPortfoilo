@@ -76,6 +76,6 @@ app.get('*', (req, res) => {
 
 
 // Dont forget to change back to 80 also proxy to 80
-app.listen(process.env.PORT || 80);
+app.listen(process.env.PORT || 8080);
 
 console.log("works");

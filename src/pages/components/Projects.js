@@ -11,6 +11,10 @@ export default class Projects extends Component{
         window.open('https://github.com/SummitMedia1/trainstationguide');
 
         }
+        function handleNexter(e) {  
+            window.open('https://nexter-jarongallo.herokuapp.com/');
+    
+            }
         function handleNatours(e) {  
             window.open('https://natours-jarongallo.herokuapp.com/');
     
@@ -44,6 +48,27 @@ export default class Projects extends Component{
 		return (
 
             <div className="container">
+ <div className="row"> 
+                    <div className="col s12"  >
+                        <div className="col s12 zoom" id='' style={{ backgroundColor: 'white' }}>
+                        <img className="projectImg dontShowyet" src="assets/img/house-4.jpeg" style={{objectFit: 'cover', width: '50%', height: '377px', padding: '10.5px 0 7px 0' }} />
+                        <div className='projectText' style={{ width: '50%', padding: "1em", float: 'left' }}>
+                                <br className='dontShow' />
+                                <br className='dontShow' />
+                                <br className='dontShow' />
+                                <h2>Nexter</h2>
+                                <p>Landing page for a realtors site, no Bootstrap, just HTML and CSS!</p>
+                                <p className="tag">CSS Grid | Sass</p>
+                                <br />
+                                <h3 className='projectBtn borderBtn' onClick={handleNexter} style={{color: '#B52637', border: "2px solid #B52637", marginLeft: '0'}}>View Project</h3>
+                            </div>
+                            <img className="dontShow" src="assets/img/house-4.jpeg" style={{objectFit: 'cover', width: '50%', height: '377px', padding: '10.5px 0 7px 0'  }} />
+
+                        </div>
+                    </div>
+                </div>
+
+            <br/>
             <div className="row">
                 
                 <div className="col s12"  >
@@ -55,7 +80,7 @@ export default class Projects extends Component{
                             <br className='dontShow' />
                             <br className='dontShow' />
                             <h2>Trillo</h2>
-                            <p >Landing page for fake company using flexbox CSS, just HTML and CSS</p>
+                            <p >Landing page for fake company using flexbox CSS, just HTML and CSS!</p>
                             <p className="tag">CSS | Flexbox</p>
                             <br />
                             <h3 className='projectBtn borderBtn' onClick={handleTrillo} style={{color: '#B52637', border: "2px solid #B52637", marginLeft: '0'}}>View Project</h3>

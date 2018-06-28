@@ -11,18 +11,21 @@ body, html {
 * {
   -webkit-overflow-scrolling: touch;
 }
-h3.borderBtn:hover { 
+h3.borderBtn:hover,
+h3.borderBtn:active { 
   color: white !important;
   background-color: #B52637 !important;
   border-color:#B52637 !important;
   transition: all .2s !important;
  }
-h3:hover { 
+h3:hover,
+h3:active { 
  color: #B52637 !important;
  transition: all .2s !important;
  
 }
-.zoom:hover {
+.zoom:hover,
+.zoom:active {
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); ; 
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); 
   transition: all .2s !important;
